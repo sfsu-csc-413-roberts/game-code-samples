@@ -5,6 +5,7 @@ import graphics.Sprite;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.File;
 import java.io.IOException;
 
 /**
@@ -20,7 +21,7 @@ public class KeyboardPanel extends AnimationPanel implements KeyListener {
     this.setFocusable( true );
 
     try {
-      this.explosion = new Sprite( "resources/Explosion_small_strip6.png", 32 );
+      this.explosion = new Sprite( "resources" + File.pathSeparator + "Explosion_small_strip6.png", 32 );
     } catch( IOException exception ) {
       exception.printStackTrace();
     }
