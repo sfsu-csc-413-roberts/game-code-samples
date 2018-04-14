@@ -1,5 +1,6 @@
 package test;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Observable;
 
@@ -8,7 +9,7 @@ public class Explosion extends Animation {
 
   public Explosion() throws IOException {
     super(
-      new Sprite( "resources/Explosion_small_strip6.png", 32 ),
+      new Sprite( "resources" + File.pathSeparator + "Explosion_small_strip6.png", 32 ),
       100,
       100
     );

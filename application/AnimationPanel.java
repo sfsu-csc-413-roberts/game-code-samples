@@ -5,6 +5,7 @@ import graphics.GameObject;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -15,8 +16,8 @@ public abstract class AnimationPanel extends JPanel implements Runnable {
   protected final int WIDTH = 640;
   protected final int HEIGHT = 640;
   protected final int STEP = 10;
-  protected final String BACKGROUND_IMAGE = "resources/Background.png";
-  protected final String TANK_IMAGE = "resources/Tank_grey_basic.png";
+  protected final String BACKGROUND_IMAGE = "resources" + File.pathSeparator + ".png";
+  protected final String TANK_IMAGE = "resources" + File.pathSeparator + "Tank_grey_basic.png";
 
   protected Dimension dimension;
 

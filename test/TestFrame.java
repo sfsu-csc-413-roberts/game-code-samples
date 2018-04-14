@@ -1,10 +1,12 @@
 package test;
 
 import javax.swing.*;
+
+import java.io.File;
 import java.io.IOException;
 
 public class TestFrame extends JFrame {
-  private final String SPRITE = "resources/Shell_heavy_strip60.png";
+  private final String SPRITE = "resources" + File.pathSeparator + "Shell_heavy_strip60.png";
 
   public TestFrame() throws IOException {
     setTitle( "test" );
